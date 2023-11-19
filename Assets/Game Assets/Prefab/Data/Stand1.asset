@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7a7454cba28704288423e5a3369b82, type: 3}
+  m_Name: Stand1
+  m_EditorClassIdentifier: 
+  jenisStand: 1
+  levelStand: 5
+  namaStand: Gehu Edun Pisan
+  jumlahMakanan: 450000001500000009000000
+  selectedManualCreate: 0
+  spriteStand:
+  - {fileID: 21300000, guid: c5d74ac3c84ce7e4c961e78557ec89f7, type: 3}
+  - {fileID: 21300000, guid: de2ae77064c6c1242aeef5a6331315c3, type: 3}
+  - {fileID: 21300000, guid: 7b1ddc83e15dd404fbc1312cf5174776, type: 3}
+  - {fileID: 21300000, guid: 626059ca2f738004abbc20d31287e88d, type: 3}
+  - {fileID: 21300000, guid: e03b236d5d3609f46abd3c15f56c137e, type: 3}
+  bonusSpeedSpawn: 1
+  bonusPopularity: 1
+  bonusCoin: 0
+  limitMaksimal: 100
+  bonusAutoCreate: 1
+  bonusManualCreate: 1
+  levelDekorasi1: 1
+  spriteDekorasi1: []
+  levelDekorasi2: 1
+  spriteDekorasi2: []
+  levelDekorasi3: 1
+  spriteDekorasi3: []
+  levelDekorasi4: 1
+  spriteDekorasi4: []
+  levelDekorasi5: 1
+  spriteDekorasi5: []
+  levelDekorasi6: 1
+  spriteDekorasi6: []

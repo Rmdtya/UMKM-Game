@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: a5e1b813bb00ca54aac682f588aa0376
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bevellier
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 83c0eb1af628ed44baf1d903de8a58a7, type: 3}
+  - {fileID: 12800000, guid: 61193b4ca479ffa44aa3acfa09f856da, type: 3}
+  - {fileID: 12800000, guid: a0f407222a1f8bb4198b52167e562e5f, type: 3}
+  - {fileID: 12800000, guid: 61846954c0acb3f4bbd200d25d019fde, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

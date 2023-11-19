@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "778889672609",
+    "firebase_url": "https://umkm-game-project-a30c9-default-rtdb.firebaseio.com",
+    "project_id": "umkm-game-project-a30c9",
+    "storage_bucket": "umkm-game-project-a30c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778889672609:android:86cec8d7fc65917dba3de0",
+        "android_client_info": {
+          "package_name": "com.adadads.cc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd6vXbw3vawAzq14NjPuSaAsO22AHyHxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778889672609:android:676c5b63295feb17ba3de0",
+        "android_client_info": {
+          "package_name": "com.arurang.checking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778889672609-mudvcoaeqt3kemnjk3kfpo5p6jjuc83e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arurang.checking",
+            "certificate_hash": "db96cc469cc2b72f3ed4629aeb9951e3d9e6feb6"
+          }
+        },
+        {
+          "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd6vXbw3vawAzq14NjPuSaAsO22AHyHxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778889672609:android:abae8efd841e7fc7ba3de0",
+        "android_client_info": {
+          "package_name": "com.arurang.umkmproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778889672609-f5ovg190ntqr41nrro5hg39io3d8uv3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arurang.umkmproject",
+            "certificate_hash": "5c82bcd9205a86fa67372111d71562a269ffafbb"
+          }
+        },
+        {
+          "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd6vXbw3vawAzq14NjPuSaAsO22AHyHxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778889672609-2t61mft6ioqo6941572dm00ddf3kq27c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

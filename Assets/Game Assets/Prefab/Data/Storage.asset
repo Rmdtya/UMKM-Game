@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8d2755d7383a041bd0bdd6186c77ed, type: 3}
+  m_Name: Storage
+  m_EditorClassIdentifier: 
+  jenis: 0
+  hargaMakanan: 0
+  penyimpananBahan:
+  - namaBahan: Rempah - Rempah
+    jumlah: 1000
+  - namaBahan: Cabai
+    jumlah: 1000
+  - namaBahan: Terigu
+    jumlah: 1000
+  - namaBahan: Minyak
+    jumlah: 1000
+  - namaBahan: Terigu
+    jumlah: 1000
+  - namaBahan: Toge
+    jumlah: 1000
+  - namaBahan: Daging
+    jumlah: 1000
+  - namaBahan: Mie
+    jumlah: 100
+  - namaBahan: Telur
+    jumlah: 100
+  - namaBahan: Sosis
+    jumlah: 100
+  - namaBahan: Bengkuang
+    jumlah: 100

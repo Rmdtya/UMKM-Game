@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7a7454cba28704288423e5a3369b82, type: 3}
+  m_Name: Stand2
+  m_EditorClassIdentifier: 
+  jenisStand: 2
+  levelStand: 1
+  namaStand: 
+  jumlahMakanan: 
+  selectedManualCreate: 1
+  spriteStand:
+  - {fileID: 21300000, guid: 73e9b065281f81c4084cf88814bea625, type: 3}
+  - {fileID: 21300000, guid: e6859bfc2a18e7045afb3fe2bac9c0f1, type: 3}
+  - {fileID: 21300000, guid: 3139238999abdbf42af3182f08adae01, type: 3}
+  - {fileID: 21300000, guid: 3eb746d3a7166514588a478ba8dc5b56, type: 3}
+  - {fileID: 21300000, guid: ff9fdd7cc4a12c14fb100c8d9c2b6b8b, type: 3}
+  bonusSpeedSpawn: 0
+  bonusPopularity: 0
+  bonusCoin: 0
+  limitMaksimal: 100
+  bonusAutoCreate: 0
+  bonusManualCreate: 0
+  levelDekorasi1: 0
+  spriteDekorasi1: []
+  levelDekorasi2: 0
+  spriteDekorasi2: []
+  levelDekorasi3: 0
+  spriteDekorasi3: []
+  levelDekorasi4: 0
+  spriteDekorasi4: []
+  levelDekorasi5: 0
+  spriteDekorasi5: []
+  levelDekorasi6: 0
+  spriteDekorasi6: []

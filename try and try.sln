@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games", "Google.Play.Games.csproj", "{26A7B57B-3079-7151-FB9C-BAE2F0CCCBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FA6281C2-E3B5-D6EA-2577-A6579FE9CA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games.Editor", "Google.Play.Games.Editor.csproj", "{74AE7F69-15EA-A937-1B53-FA66141BD0FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26A7B57B-3079-7151-FB9C-BAE2F0CCCBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A7B57B-3079-7151-FB9C-BAE2F0CCCBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A7B57B-3079-7151-FB9C-BAE2F0CCCBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A7B57B-3079-7151-FB9C-BAE2F0CCCBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6281C2-E3B5-D6EA-2577-A6579FE9CA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6281C2-E3B5-D6EA-2577-A6579FE9CA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6281C2-E3B5-D6EA-2577-A6579FE9CA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6281C2-E3B5-D6EA-2577-A6579FE9CA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AE7F69-15EA-A937-1B53-FA66141BD0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AE7F69-15EA-A937-1B53-FA66141BD0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AE7F69-15EA-A937-1B53-FA66141BD0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AE7F69-15EA-A937-1B53-FA66141BD0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
