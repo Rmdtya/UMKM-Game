@@ -13358,7 +13358,7 @@ IL_0089:
 				FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B L_11 = V_1;
 				NullCheck(L_10);
 				bool L_12;
-				L_12 = InterfaceFuncInvoker2< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8** >::Invoke(3 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::TryGetValue(TKey,TValue&) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_10, L_11, (&V_0));
+				L_12 = InterfaceFuncInvoker2< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8** >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::TryGetValue(TKey,TValue&) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_10, L_11, (&V_0));
 				V_4 = (bool)((((int32_t)L_12) == ((int32_t)0))? 1 : 0);
 				bool L_13 = V_4;
 				if (!L_13)
@@ -13386,7 +13386,7 @@ IL_0089:
 				FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B L_23 = V_1;
 				FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8* L_24 = V_0;
 				NullCheck(L_22);
-				InterfaceActionInvoker2< FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8* >::Invoke(0 /* System.Void System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::set_Item(TKey,TValue) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_22, L_23, L_24);
+				InterfaceActionInvoker2< FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8* >::Invoke(1 /* System.Void System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::set_Item(TKey,TValue) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_22, L_23, L_24);
 				FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8* L_25 = V_0;
 				V_6 = L_25;
 				goto IL_00cb;
@@ -14629,7 +14629,7 @@ IL_005d:
 				FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B L_7 = V_3;
 				NullCheck(L_6);
 				bool L_8;
-				L_8 = InterfaceFuncInvoker2< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8** >::Invoke(3 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::TryGetValue(TKey,TValue&) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_6, L_7, (&V_2));
+				L_8 = InterfaceFuncInvoker2< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B, FirebaseFirestore_tAF16CB8787D9068C20C4BDC6D61F35AD0AF723A8** >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::TryGetValue(TKey,TValue&) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_6, L_7, (&V_2));
 				if (!L_8)
 				{
 					goto IL_003b_1;
@@ -14661,7 +14661,7 @@ IL_003c_1:
 				FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B L_12 = V_3;
 				NullCheck(L_11);
 				bool L_13;
-				L_13 = InterfaceFuncInvoker1< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B >::Invoke(2 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::Remove(TKey) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_11, L_12);
+				L_13 = InterfaceFuncInvoker1< bool, FirestoreInstanceCacheKey_t05A04AA5AC709ACE8BAB7315AD98EC2EB80B6F2B >::Invoke(3 /* System.Boolean System.Collections.Generic.IDictionary`2<Firebase.Firestore.FirebaseFirestore/FirestoreInstanceCacheKey,Firebase.Firestore.FirebaseFirestore>::Remove(TKey) */, IDictionary_2_t323026777BB891D486606587DC52F807E3CD3E42_il2cpp_TypeInfo_var, L_11, L_12);
 			}
 
 IL_0050_1:
@@ -24212,7 +24212,7 @@ IL_000f:
 		Type_t* L_2 = ___0_targetType;
 		NullCheck(G_B2_0);
 		bool L_3;
-		L_3 = InterfaceFuncInvoker2< bool, Type_t*, RuntimeObject** >::Invoke(3 /* System.Boolean System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter>::TryGetValue(TKey,TValue&) */, IDictionary_2_t035224085B86686A781D8AB3019CE2C9FD838FA6_il2cpp_TypeInfo_var, G_B2_0, L_2, (&V_0));
+		L_3 = InterfaceFuncInvoker2< bool, Type_t*, RuntimeObject** >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter>::TryGetValue(TKey,TValue&) */, IDictionary_2_t035224085B86686A781D8AB3019CE2C9FD838FA6_il2cpp_TypeInfo_var, G_B2_0, L_2, (&V_0));
 	}
 
 IL_0018:

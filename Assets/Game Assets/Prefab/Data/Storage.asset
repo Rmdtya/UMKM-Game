@@ -12,28 +12,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8d2755d7383a041bd0bdd6186c77ed, type: 3}
   m_Name: Storage
   m_EditorClassIdentifier: 
-  jenis: 0
-  hargaMakanan: 0
+  limitMaksimal: 5000
   penyimpananBahan:
   - namaBahan: Rempah - Rempah
-    jumlah: 1000
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: 77a4b3c7af501474b943f209c357b325, type: 3}
   - namaBahan: Cabai
-    jumlah: 1000
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: 8e3dd705ac7e390449d43e7f2854e6c5, type: 3}
   - namaBahan: Terigu
-    jumlah: 1000
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: f78ccb9e9a0bed24881afbfa17223740, type: 3}
   - namaBahan: Minyak
-    jumlah: 1000
-  - namaBahan: Terigu
-    jumlah: 1000
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: 71ae0d2bd59dd5c459c1707595d23347, type: 3}
+  - namaBahan: Tahu
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: ddfad5826e6767446a45404ed607a479, type: 3}
   - namaBahan: Toge
-    jumlah: 1000
+    jumlah: 49.01941
+    spriteBahan: {fileID: 21300000, guid: 2e0da4b21f5d064488879ef1caca6e64, type: 3}
   - namaBahan: Daging
-    jumlah: 1000
+    jumlah: 56.410538
+    spriteBahan: {fileID: 21300000, guid: 053b067bd6e5e7e48942c05df89baf86, type: 3}
   - namaBahan: Mie
-    jumlah: 100
+    jumlah: 69.64815
+    spriteBahan: {fileID: 21300000, guid: 190b40a975ffdbd438ce1bb5ee61b76d, type: 3}
   - namaBahan: Telur
-    jumlah: 100
+    jumlah: 69.64815
+    spriteBahan: {fileID: 21300000, guid: be304e3a4bb23014da6a1805d19fb8d7, type: 3}
   - namaBahan: Sosis
-    jumlah: 100
+    jumlah: 56.410538
+    spriteBahan: {fileID: 21300000, guid: 261557e0a1143d4459d59402bab62f87, type: 3}
   - namaBahan: Bengkuang
+    jumlah: 69.64815
+    spriteBahan: {fileID: 21300000, guid: 2ff05e7b1d3394b48a0f8138a18d47c7, type: 3}
+  - namaBahan: Susu
+    jumlah: 84.38163
+    spriteBahan: {fileID: 21300000, guid: d9cc5cd2ae1752f4681be379b4c31ae2, type: 3}
+  - namaBahan: Crim
+    jumlah: 85.680916
+    spriteBahan: {fileID: 21300000, guid: 58b35161eee864d4795c483da77f8a77, type: 3}
+  - namaBahan: Gula
+    jumlah: 85.680916
+    spriteBahan: {fileID: 21300000, guid: 389052dde3247174d9ec294731cdd582, type: 3}
+  - namaBahan: Vanilla
+    jumlah: 85.680916
+    spriteBahan: {fileID: 21300000, guid: 0f4f3eb616635224981f967daf88235b, type: 3}
+  - namaBahan: Wafer
+    jumlah: 85.680916
+    spriteBahan: {fileID: 21300000, guid: 8617d11bc468b4444a47d7ca11e11beb, type: 3}
+  - namaBahan: Coklat
+    jumlah: 96.10016
+    spriteBahan: {fileID: 21300000, guid: 1da8b33443fc4a248baa1e443dfbf5c8, type: 3}
+  - namaBahan: Mint
+    jumlah: 96.10016
+    spriteBahan: {fileID: 21300000, guid: 88991e6535dbb2f419c0d152e8ed07e4, type: 3}
+  - namaBahan: Strawbery
     jumlah: 100
+    spriteBahan: {fileID: 21300000, guid: 3c7e817fb8064434b934253e571ec549, type: 3}
+  - namaBahan: Permen
+    jumlah: 100
+    spriteBahan: {fileID: 21300000, guid: c1f6ed4c14046a948aee500706fd77ce, type: 3}

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaee20e156eda84c85337deb7b96441, type: 3}
+  m_Name: 02. Mie Setan
+  m_EditorClassIdentifier: 
+  namaMakanan: Mie Setan
+  levelMakanan: 1
+  jenis: 0
+  hargaMakanan: 2425
+  speedPembuatan: 5
+  deskripsiMakanan: Mengapa namanya Mie Setan? Karena rasa pedas yang luar biasa
+    membuat Anda akan merasa kesetanan.
+  hargaUpgrade: 100
+  gambarMakanan: {fileID: 21300000, guid: 9311127ae6d05774daf3317f6aac6681, type: 3}
+  unlocked: 0
+  deskripsiUnlock: Tingkatkan Stand ke Level 2 Untuk Membuka Makanan
+  gambarLocked: {fileID: 21300000, guid: 4de62acdc40fad74391168a29706ff8f, type: 3}
+  requiriment:
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0
+  - 0
+  - 0.02
+  - 0
+  spriteRequiriment:
+  - {fileID: 21300000, guid: 77a4b3c7af501474b943f209c357b325, type: 3}
+  - {fileID: 21300000, guid: 190b40a975ffdbd438ce1bb5ee61b76d, type: 3}
+  - {fileID: 21300000, guid: 8e3dd705ac7e390449d43e7f2854e6c5, type: 3}
+  - {fileID: 21300000, guid: be304e3a4bb23014da6a1805d19fb8d7, type: 3}
+  - {fileID: 21300000, guid: 261557e0a1143d4459d59402bab62f87, type: 3}
+  kelipatanHarga:
+  - 1.5
+  - 1.4
+  - 1.3
+  - 1.2
+  - 1.1
+  bonusUpgrade:
+  - 10
+  - 75
+  - 250
+  - 500
+  - 750
+  totalPeningkatanHargaMakanan: 33250
+  flatBonus: 0

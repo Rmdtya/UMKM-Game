@@ -12,32 +12,172 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7a7454cba28704288423e5a3369b82, type: 3}
   m_Name: Stand3
   m_EditorClassIdentifier: 
-  jenisStand: 3
+  jenisStand: 2
   levelStand: 1
-  namaStand: 
-  jumlahMakanan: 
-  selectedManualCreate: 2
+  namaStand: Baso Tahu
+  jumlahMakanan: 000000000000000000000000
+  selectedManualCreate: 0
   spriteStand:
-  - {fileID: 21300000, guid: 022ff83e2b2fe7c408648a9ab4d30733, type: 3}
-  - {fileID: 21300000, guid: 863dc06a19ce6084b93f01100bd6d916, type: 3}
-  - {fileID: 21300000, guid: 6c191b7f109dd9e4aa5bdae3aee6afa9, type: 3}
-  - {fileID: 21300000, guid: 468ce534a97ce1c48859043faa904a7d, type: 3}
-  - {fileID: 21300000, guid: 95899d221a378ac41adfcbb3ab27efc2, type: 3}
-  bonusSpeedSpawn: 0
-  bonusPopularity: 0
+  - {fileID: 21300000, guid: d083c7eba8ceda84ab912885258dda8e, type: 3}
+  - {fileID: 21300000, guid: 877ebea0d18e8984bb9feffff8459840, type: 3}
+  - {fileID: 21300000, guid: 651b6ef1013ae3346b252d0a86937c19, type: 3}
+  - {fileID: 21300000, guid: c126759c076f08e48ab7ddd655449a6f, type: 3}
+  - {fileID: 21300000, guid: eb8e481abb825354fa49ddeabc971714, type: 3}
+  hargaUpgradeStand:
+  - 1000000
+  - 1000000
+  - 1000000
+  - 1000000
+  bonusSpeedSpawn: 1
+  bonusPopularity: 1
   bonusCoin: 0
   limitMaksimal: 100
-  bonusAutoCreate: 0
-  bonusManualCreate: 0
-  levelDekorasi1: 0
-  spriteDekorasi1: []
-  levelDekorasi2: 0
-  spriteDekorasi2: []
-  levelDekorasi3: 0
-  spriteDekorasi3: []
-  levelDekorasi4: 0
-  spriteDekorasi4: []
-  levelDekorasi5: 0
-  spriteDekorasi5: []
-  levelDekorasi6: 0
-  spriteDekorasi6: []
+  bonusAutoCreate: 1
+  bonusManualCreate: 1
+  dekorasiStand:
+  - namaDekorasi: Banner
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: c48e8445270d7364ea28368053442aaa, type: 3}
+    - {fileID: 21300000, guid: 7f0a0862af847604784e9b7d9214e6ff, type: 3}
+    - {fileID: 21300000, guid: 88c1c9698dad3734380f32aede14659c, type: 3}
+    - {fileID: 21300000, guid: 6d2b64b3601aa744ab518e85e28be3bf, type: 3}
+    - {fileID: 21300000, guid: 90702e25cd055b84a961a5f63d595ce3, type: 3}
+    hargaUpgrade: 3900
+    bonusEfek: Popularity Rate ++
+    deskripsiDekorasi: Banner meningkatkan tingkat popularitas dari stand toko
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 0.005
+    - 0.01
+    - 0.015
+    - 0.02
+    - 0.04
+    totalBonus: 0
+  - namaDekorasi: Storage
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: e08e5942a1e7b4f4ba8417a6c4ff49c1, type: 3}
+    - {fileID: 21300000, guid: cfb22b83b36d077419fc02a1ed3e965e, type: 3}
+    - {fileID: 21300000, guid: f016495e479397141911d784a95a877d, type: 3}
+    - {fileID: 21300000, guid: d53ebbe1a278c51488802ab9ca9b89f1, type: 3}
+    - {fileID: 21300000, guid: 832f32f680768264bb48e0cc87f68978, type: 3}
+    hargaUpgrade: 8000
+    bonusEfek: Limit Gudang ++
+    deskripsiDekorasi: Meningkatkan jumlah maksimal dari limit dalam gudang
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    totalBonus: 0
+  - namaDekorasi: Speaker
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: 1bd2fdc2aa566b2489453dcf43241a39, type: 3}
+    - {fileID: 21300000, guid: f47654287b54e1148b17f4d2bfa4f2ae, type: 3}
+    - {fileID: 21300000, guid: 1779cc15e09ec2d45bc9054decc889b1, type: 3}
+    - {fileID: 21300000, guid: ec7865aac60812244b04054360098390, type: 3}
+    - {fileID: 21300000, guid: 80c7de0f3fe1b53489fd495a805064b8, type: 3}
+    hargaUpgrade: 4500
+    bonusEfek: Spawn Rate ++
+    deskripsiDekorasi: Digunakan untuk menarik pelanggan sehingga mempercepat munculnya
+      pelanggan
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 0.005
+    - 0.01
+    - 0.015
+    - 0.02
+    - 0.04
+    totalBonus: 0
+  - namaDekorasi: Panci
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: 11fd74112f30e614093865728656921a, type: 3}
+    - {fileID: 21300000, guid: b0a1c4c392608d0419d60ea083ca00c1, type: 3}
+    - {fileID: 21300000, guid: adf3f61c26002c0498d0913f23036fc7, type: 3}
+    - {fileID: 21300000, guid: 4c69435d50a70fa4890e243aa48eedd3, type: 3}
+    - {fileID: 21300000, guid: b47c78fd96b9e764a8a7fcb27755d07e, type: 3}
+    hargaUpgrade: 11500
+    bonusEfek: Limit Makanan ++
+    deskripsiDekorasi: Kualitas panci berpengaruh pada kecepatan membuat makanan.
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 3
+    - 5
+    - 15
+    - 22
+    - 35
+    totalBonus: 0
+  - namaDekorasi: Kompor
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: 2e5262e77d842064e924be657df9200f, type: 3}
+    - {fileID: 21300000, guid: 1dfcf50cd5189aa40817a9ed99094fd8, type: 3}
+    - {fileID: 21300000, guid: e2a82a1540dba3d4cadefe8bb66383f8, type: 3}
+    - {fileID: 21300000, guid: 441110f94070db74e91c2f3e77aebd8f, type: 3}
+    - {fileID: 21300000, guid: 323356acc0fc92a40a3405cb3c4c0161, type: 3}
+    hargaUpgrade: 90
+    bonusEfek: Manual Rate ++
+    deskripsiDekorasi: Kualitas kompor berpengaruh pada kecepatan membuat makanan.
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 0.005
+    - 0.01
+    - 0.15
+    - 0.02
+    - 0.04
+    totalBonus: 0
+  - namaDekorasi: Lampu
+    levelDekorasi: 1
+    spriteDekorasi:
+    - {fileID: 21300000, guid: 322d8e8bb979f3a47b27f40f5c14d2ae, type: 3}
+    - {fileID: 21300000, guid: 9db3a22a3540a6540842c62662f47982, type: 3}
+    - {fileID: 21300000, guid: 2955d59a36772374f8377d809d4142d0, type: 3}
+    - {fileID: 21300000, guid: 60c78987a5ecc8c40b72f17b5ecf24db, type: 3}
+    - {fileID: 21300000, guid: 99e9e7a26757cad4e9f363bb6ef81de3, type: 3}
+    hargaUpgrade: 36600
+    bonusEfek: Bonus Coin ++
+    deskripsiDekorasi: Meningkatkan jumlah pendapatan setiap jumlah makanan yang
+      terjual
+    hargaKelipatan:
+    - 1.05
+    - 1.04
+    - 1.02
+    - 1.01
+    - 1.01
+    bonusKelipatan:
+    - 75
+    - 165
+    - 250
+    - 350
+    - 500
+    totalBonus: 0

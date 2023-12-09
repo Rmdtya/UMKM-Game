@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9323f4c71173b534290df66f98541d1f, type: 3}
   m_Name: userData
   m_EditorClassIdentifier: 
-  coin: 110000
+  coin: 0
   diamond: 0
-  popularity: 111
+  popularity: 0
   multipilerCoinBonus: 1
   plusCoinBonus: 0
   multipilerSpeedSpawnBonus: 1
@@ -25,5 +25,5 @@ MonoBehaviour:
   douleAutoCreateBonus: 0
   createWithOutResource: 0
   standUnlocked1: 1
-  standUnlocked2: 1
-  standUnlocked3: 1
+  standUnlocked2: 0
+  standUnlocked3: 0

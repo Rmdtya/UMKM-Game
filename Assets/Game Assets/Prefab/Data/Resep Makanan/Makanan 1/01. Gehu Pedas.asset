@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaee20e156eda84c85337deb7b96441, type: 3}
+  m_Name: 01. Gehu Pedas
+  m_EditorClassIdentifier: 
+  namaMakanan: Gehu Pedas
+  levelMakanan: 1
+  jenis: 0
+  hargaMakanan: 100
+  speedPembuatan: 5
+  deskripsiMakanan: "Gehu (singkatan dari tog\xE9 jeung tahu) adalah camilan khas
+    Sunda yang terbuat dari tahu yang diisi dengan tauge"
+  hargaUpgrade: 0
+  gambarMakanan: {fileID: 21300000, guid: 4b12dc2de1a06df42a71a246d548b6c4, type: 3}
+  unlocked: 1
+  deskripsiUnlock: 
+  gambarLocked: {fileID: 0}
+  requiriment:
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0.01
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  spriteRequiriment:
+  - {fileID: 21300000, guid: 77a4b3c7af501474b943f209c357b325, type: 3}
+  - {fileID: 21300000, guid: 71ae0d2bd59dd5c459c1707595d23347, type: 3}
+  - {fileID: 21300000, guid: ddfad5826e6767446a45404ed607a479, type: 3}
+  - {fileID: 21300000, guid: 2e0da4b21f5d064488879ef1caca6e64, type: 3}
+  kelipatanHarga:
+  - 1.5
+  - 1.4
+  - 1.3
+  - 1.2
+  - 1.1
+  bonusUpgrade:
+  - 100
+  - 250
+  - 500
+  - 1000
+  - 2500
+  totalPeningkatanHargaMakanan: 0
+  flatBonus: 0

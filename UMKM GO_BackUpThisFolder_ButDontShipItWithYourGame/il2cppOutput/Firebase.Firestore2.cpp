@@ -5010,7 +5010,7 @@ IL_0010_1:
 				FieldValueProxy_t9D6AD5742313557D895018060117AB42F7419B26* L_9;
 				L_9 = AttributedProperty_GetSerializedValue_m22FC2AB51969592306C17B84BB84D2FA3F0FCF46(L_6, L_7, L_8, NULL);
 				NullCheck(L_3);
-				InterfaceActionInvoker2< String_t*, FieldValueProxy_t9D6AD5742313557D895018060117AB42F7419B26* >::Invoke(0 /* System.Void System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy>::set_Item(TKey,TValue) */, IDictionary_2_t6E45F1BFCF8907736E4E289E478607C9D311F2AA_il2cpp_TypeInfo_var, L_3, L_5, L_9);
+				InterfaceActionInvoker2< String_t*, FieldValueProxy_t9D6AD5742313557D895018060117AB42F7419B26* >::Invoke(1 /* System.Void System.Collections.Generic.IDictionary`2<System.String,Firebase.Firestore.FieldValueProxy>::set_Item(TKey,TValue) */, IDictionary_2_t6E45F1BFCF8907736E4E289E478607C9D311F2AA_il2cpp_TypeInfo_var, L_3, L_5, L_9);
 			}
 
 IL_002f_1:

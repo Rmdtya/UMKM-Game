@@ -29,6 +29,15 @@ public class Stand : MonoBehaviour
     [Header("Stand UI")]
     public TextMeshProUGUI textJumlahMakanan;
     public TextMeshProUGUI textNamaToko;
+    public TextMeshProUGUI textLevelStand;
+
+
+    [Header("Pedagang")]
+    public Image imagePedagang;
+    public Sprite[] spritePedagang;
+    private int currentSpriteIndex = 0;
+    public float changeInterval = 2f; // Interval in seconds
+
 
 
     void Start()
@@ -40,6 +49,7 @@ public class Stand : MonoBehaviour
         
         SetTextStand();
         SetTextTotalMakanan();
+        SetLevelStand();
 
         jenisStand = standStatus.jenisStand;
 
@@ -47,7 +57,6 @@ public class Stand : MonoBehaviour
     }
 
    
-
     private void SetImageStand()
     {
         imageStand.sprite = standStatus.spriteStand[standStatus.GetLevelStand() - 1];
@@ -56,6 +65,11 @@ public class Stand : MonoBehaviour
     public void SetTextStand()
     {
         textNamaToko.text = standStatus.namaStand;
+    }
+
+    public void SetLevelStand()
+    {
+        textLevelStand.text = standStatus.GetLevelStand().ToString();
     }
 
     private void SetTextTotalMakanan()
@@ -75,6 +89,11 @@ public class Stand : MonoBehaviour
         return total;
     }
 
+    public void ReinvokeFoodCreate()
+    {
+        SetAutomaticInvoke();
+    }
+
     private void SetAutomaticInvoke()
     {
         StopAllCoroutines();
@@ -82,21 +101,39 @@ public class Stand : MonoBehaviour
 
         for (int i = 0; i < makanan.Length; i++)
         {
-            float speedCreate = makanan[i].speedPembuatan * userdata.multipilerAutoCreateBonus * standStatus.GetBonusAutoCreate();
+            float speedCreate = makanan[i].speedPembuatan * userdata.multipilerAutoCreateBonus / standStatus.GetBonusAutoCreate();
             
             if(i == 0)
             {
                 StartCoroutine(CreateFoodParameter(speedCreate, 0));
             }
-            else if (i == 1 && standStatus.GetLevelStand() >= 3)
+            else if (i == 1 && standStatus.GetLevelStand() >= 2)
             {
                 StartCoroutine(CreateFoodParameter(speedCreate, 1));
             }
-            else if (i == 2 && standStatus.GetLevelStand() >= 5)
+            else if (i == 2 && standStatus.GetLevelStand() >= 4)
             {
                 StartCoroutine(CreateFoodParameter(speedCreate, 2));
             }
         }
+
+        StartCoroutine(ChangeSpritePedagang());
+    }
+
+    IEnumerator ChangeSpritePedagang()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(changeInterval);
+            ChangePose();
+        }
+    }
+
+    void ChangePose()
+    {
+        // Change the sprite to the next one in the array
+        currentSpriteIndex = (currentSpriteIndex + 1) % spritePedagang.Length;
+        imagePedagang.sprite = spritePedagang[currentSpriteIndex];
     }
 
     // Update is called once per frame
@@ -125,7 +162,7 @@ public class Stand : MonoBehaviour
         bool statusKetersediaan = true;
             for(int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
             {
-                if (storage.penyimpananBahan[i].jumlah <= makanan[jenisMakanan].requiriment[i])
+                if (storage.penyimpananBahan[i].jumlah <= makanan[jenisMakanan].requiriment[i - start])
                 {
                     statusKetersediaan = false;
                     break; // Keluar dari loop jika persyaratan tidak terpenuhi
@@ -136,25 +173,29 @@ public class Stand : MonoBehaviour
             {
                  for (int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
                  {
-                     storage.penyimpananBahan[i].jumlah -= makanan[jenisMakanan].requiriment[i];
+                    storage.penyimpananBahan[i].jumlah -= makanan[jenisMakanan].requiriment[i - start];
                  }
 
                  SuccesToAddMakanan(jenisMakanan, 1);
-        }       
+            }
+            else
+            {
+                UIManager.instance.ShowTopNotification("Stand " + standStatus.namaStand + " - Bahan Tidak Cukup");
+            }       
     }
 
     public int GetStarterIndexByJenisStand()
     {
         int start = 0;
-        if (jenisStand == 1)
+        if (jenisStand == 0)
         {
             start = 0;
-        }else if(jenisStand == 2)
+        }else if(jenisStand == 1)
         {
             start = 11;
-        }else if(jenisStand == 3)
+        }else if(jenisStand == 2)
         {
-
+            start = 0;
         }
 
         return start;
@@ -171,7 +212,7 @@ public class Stand : MonoBehaviour
         bool statusKetersediaan = true;
         for (int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
         {
-            if (storage.penyimpananBahan[i].jumlah <= makanan[jenisMakanan].requiriment[i])
+            if (storage.penyimpananBahan[i].jumlah <= makanan[jenisMakanan].requiriment[i - start])
             {
                 statusKetersediaan = false;
                 break; // Keluar dari loop jika persyaratan tidak terpenuhi
@@ -182,10 +223,14 @@ public class Stand : MonoBehaviour
         {
             for (int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
             {
-                storage.penyimpananBahan[i].jumlah -= makanan[jenisMakanan].requiriment[i];
+                storage.penyimpananBahan[i].jumlah -= makanan[jenisMakanan].requiriment[i - start];
             }
 
              SuccesToAddMakanan(jenisMakanan, 1);
+        }
+        else
+        {
+            UIManager.instance.ShowTopNotification("Stand " + standStatus.namaStand + " - Bahan Tidak Cukup");
         }
     }
 
@@ -193,6 +238,21 @@ public class Stand : MonoBehaviour
     {
         standStatus.jumlahMakanan[jenisMakanan] += jumlah;
         SetTextTotalMakanan();
+
+        UpdateJumlahMakanan();
+    }
+
+    private void UpdateJumlahMakanan()
+    {
+        if (GameManager.instance.popupStandActive)
+        {
+            StandPopup.instance.updateJumlahMakanan();
+        }
+
+        if (GameManager.instance.popupCreateMakanan)
+        {
+            PopupCreateMakanan.instance.updateJumlahMakanan();
+        }
     }
 
     public bool Transaction(int jumlahBeli, int jenisMakanan, CustomerSpecialSkill customerSkill)
@@ -209,12 +269,46 @@ public class Stand : MonoBehaviour
                 UserStatus.instance.CallAddCoin(makanan[jenisMakanan].hargaMakanan * jumlahBeli * userData.multipilerCoinBonus + (userData.plusCoinBonus * jumlahBeli) + (standStatus.GetBonusCoin() * jumlahBeli));
                 UserStatus.instance.SetPopularityPoint(jumlahBeli * userData.multipilerPopularityBonus * standStatus.GetBonusPopularity());
 
-                return true;
+                UpdateJumlahMakanan();
+
+            return true;
             }
             else
             {
+                UIManager.instance.ShowTopNotification("Stand " + standStatus.namaStand + " - Makanan Tidak Tersedia");
                 return false;
             }
+    }
+
+    public void ShowUpgradeStandLevel()
+    {
+        UIManager.instance.ShowStandUpgradePopup(this, standStatus.spriteStand[standStatus.GetLevelStand()], standStatus.GetLevelStand(), standStatus.namaStand, standStatus.hargaUpgradeStand[standStatus.GetLevelStand() - 1]);
+    }
+
+    public void UpgradeStandLevel()
+    {
+        standStatus.UpgradeLevelStand();
+        SetImageStand();
+        SetLevelStand();
+
+        LoadSaveData.instance.SaveData();
+
+        int levelNow = standStatus.GetLevelStand();
+        if(levelNow == 2)
+        {
+            if (!makanan[1].GetUnlockStatus())
+            {
+                makanan[1].UnlockMakanan();
+                ReinvokeFoodCreate();
+            }
+        }else if(levelNow == 4)
+        {
+            if (!makanan[2].GetUnlockStatus())
+            {
+                makanan[2].UnlockMakanan();
+                ReinvokeFoodCreate();
+            }
+        }
     }
 
     public int GetJenisStand()
@@ -237,4 +331,89 @@ public class Stand : MonoBehaviour
         return standStatus.GetLevelStand();
     }
 
+    public StandStatus GetStandStatus()
+    {
+        return standStatus;
+    }
+
+
+    public int UpgradeDekorasiStand(int index, int standLevel)
+    {
+        standStatus.UpgradeDekorasi(index, standLevel);
+
+        if (index == 2)
+        {
+            SpawnPeople.instance.ReinvokeSpawn();
+            Debug.Log("Reinvoke Spawn");
+        }else if(index == 4)
+        {
+            ReinvokeFoodCreate();
+        }
+
+        return standStatus.GetSpesifikasiLevelDekorasi(index);
+    }
+
+    public ResepMakanan[] GetResepMakanan()
+    {
+        return makanan;
+    }
+
+    public double TotalHargaPorsi()
+    {
+        double harga = 0;
+        for(int i = 0; i < makanan.Length; i++)
+        {
+            if (makanan[i].GetUnlockStatus())
+            {
+                harga += makanan[i].hargaMakanan;
+            }
+        }
+
+        return harga;
+    }
+
+    public void UnlockFirstFood()
+    {
+        makanan[0].UnlockMakanan();
+    }
+
+    public bool OfflineCreateMakanan(int jenisMakanan, int standNomor)
+    {
+        if(standNomor == 0)
+        {
+            jenisMakanan -= 0;
+        }else if(standNomor == 1)
+        {
+            jenisMakanan -= 3;
+        }else if(standNomor == 2)
+        {
+            jenisMakanan -= 6;
+        }
+
+        int start = GetStarterIndexByJenisStand();
+
+        bool statusKetersediaan = true;
+        for (int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
+        {
+            if (storage.penyimpananBahan[i].jumlah <= makanan[jenisMakanan].requiriment[i - start])
+            {
+                statusKetersediaan = false;
+                break; // Keluar dari loop jika persyaratan tidak terpenuhi
+            }
+        }
+
+        if (statusKetersediaan)
+        {
+            for (int i = 0 + start; i < makanan[jenisMakanan].requiriment.Length + start; i++)
+            {
+                storage.penyimpananBahan[i].jumlah -= makanan[jenisMakanan].requiriment[i - start];
+            }
+
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

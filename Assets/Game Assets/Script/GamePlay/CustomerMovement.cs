@@ -28,6 +28,9 @@ public class CustomerMovement : MonoBehaviour {
 
     private Vector3 targetOffset;
 
+    public Vector3 targetPositionWithOffset;
+    public Vector3 positionObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,14 +64,15 @@ public class CustomerMovement : MonoBehaviour {
         if (!perjalananMulai)
         {
                 float step = moveSpeed * Time.deltaTime;
-                Vector3 targetPositionWithOffset = targetOffset + targetStand.transform.position;
+                targetPositionWithOffset = targetOffset + targetStand.transform.position;
                 transform.position = Vector3.MoveTowards(transform.position, targetPositionWithOffset, step);
 
                 // Update total jarak yang sudah ditempuh
                 totalDistance += step;
+            positionObject = transform.position;
 
                 // Jika sudah bergerak sejauh 300f, mulai waktu tunggu
-                if (transform.position == targetPositionWithOffset)
+            if (transform.position.x <= targetPositionWithOffset.x)
                 {
                     isWaiting = true;
                     perjalananMulai = true;
@@ -107,13 +111,16 @@ public class CustomerMovement : MonoBehaviour {
                         StartCoroutine(MoveToLastPosition());
                         int jenisStand = scriptComponent.GetJenisStand();
 
-                        if (jenisStand == 1)
+                        if (jenisStand == 0)
                         {
                             ShowPose3();
                         }
-                        else if (jenisStand == 2)
+                        else if (jenisStand == 1)
                         {
                             ShowPose4();
+                        }else if(jenisStand == 2)
+                        {
+                            ShowPose3();
                         }
 
                     }
@@ -139,13 +146,18 @@ public class CustomerMovement : MonoBehaviour {
         }
     }
 
+    public bool GetUnlockStatus(int index)
+    {
+        return customerStatus.GetUnlockStatus(index);
+    }
+
     private IEnumerator MoveToLastPosition()
     {
         // Tunggu sampai mencapai posisi Stand terpilih
         float startTime = Time.time;
         /*float journeyLength = Vector3.Distance(transform.position, endLoc);*/
 
-        Debug.Log("bergerak");
+        //Debug.Log("bergerak");
 
         while (transform.position != transform.position)
         {
@@ -160,19 +172,14 @@ public class CustomerMovement : MonoBehaviour {
         return customerStatus.speedCustomer;
     }
 
-    public bool GetUnlockedStatus1()
+    public bool GetUnlockedStatus(int index)
     {
-        return customerStatus.unlockedStand1;
+        return customerStatus.GetUnlockStatus(index);
     }
 
-    public bool GetUnlockedStatus2()
+    public CustomerStatus GetCustomerScript()
     {
-        return customerStatus.unlockedStand2;
-    }
-
-    public bool GetUnlockedStatus3()
-    {
-        return customerStatus.unlockedStand3;
+        return customerStatus;
     }
 
     private void ShowAngryIcon()

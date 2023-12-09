@@ -56,29 +56,38 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game Assets\Script\UI Script\OvertimeUI.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\Game Assets\Script\Data Class\UserStatus.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupStatistik.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
     <Compile Include="Assets\Game Assets\Script\ScriptableObject\DataEnum.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupInAppPurchase.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\Game Assets\Script\ScriptableObject\CustomerStatus.cs" />
+    <Compile Include="Assets\Game Assets\Script\Other\WorldTimeAPI.cs" />
     <Compile Include="Assets\Game Assets\Script\GamePlay\CustomerMovement.cs" />
     <Compile Include="Assets\Game Assets\Script\GamePlay\TambahMakananOnClick.cs" />
     <Compile Include="Assets\Game Assets\Script\ScriptableObject\ResourceBahan.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\Game Assets\Script\SoundManager.cs" />
+    <Compile Include="Assets\Game Assets\Script\OfflineActivity.cs" />
     <Compile Include="Assets\Game Assets\Script\OnClickSpawned.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\GamePlayNotification.cs" />
     <Compile Include="Assets\Game Assets\Script\Other\GooglePlayManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\Game Assets\Script\LoadingSlider.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupNotification.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupStorage.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupCreateMakanan.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
@@ -87,11 +96,16 @@
     <Compile Include="Assets\Game Assets\Script\ScriptableObject\Storage.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+    <Compile Include="Assets\Game Assets\Script\Data Class\ResetStatus.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PanelPelanggan.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupMarket.cs" />
     <Compile Include="Assets\Game Assets\Script\Other\SaveData.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\Game Assets\Script\UIManager.cs" />
+    <Compile Include="Assets\Game Assets\Script\ScriptableObject\StartingData.cs" />
     <Compile Include="Assets\Game Assets\Script\GamePlay\SpawnPeople.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupBank.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\Game Assets\Script\UI Script\StandPopup.cs" />
     <Compile Include="Assets\Game Assets\Script\GamePlay\Stand.cs" />
@@ -99,6 +113,7 @@
     <Compile Include="Assets\Game Assets\Script\GameManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets\Game Assets\Script\Data Class\ResourceStorage.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\GuideScript.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
     <Compile Include="Assets\Game Assets\Script\CameraController.cs" />
@@ -106,11 +121,17 @@
     <Compile Include="Assets\Game Assets\Script\ScriptableObject\UserData.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
     <Compile Include="Assets\Game Assets\Script\Other\Auth.cs" />
-    <Compile Include="Assets\Game Assets\Script\Data Class\LoadData.cs" />
+    <Compile Include="Assets\Game Assets\Script\UnityAdds\AdsInitializer.cs" />
+    <Compile Include="Assets\Game Assets\Script\Data Class\LoadSaveData.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
+    <Compile Include="Assets\Game Assets\Script\UnityAdds\RewardedAdsButton.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
+    <Compile Include="Assets\Game Assets\Script\Starting.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\ResepPopup.cs" />
     <Compile Include="Assets\Game Assets\Script\CameraSwifeMovement.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\BuyBahan.cs" />
+    <Compile Include="Assets\Game Assets\Script\UI Script\PopupOfflineBonus.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
@@ -126,6 +147,7 @@
     <None Include="Assets\Game Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Analytics.dll" />
     <None Include="Assets\Firebase\Plugins\Firebase.App.dll" />
+    <None Include="Assets\Temporary\SaveData.txt" />
     <None Include="Assets\Game Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\LeanTween\License.txt" />
     <None Include="Assets\Game Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -137,6 +159,8 @@
     <None Include="Assets\Firebase\Plugins\Firebase.TaskExtension.dll" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\Plugins\Firebase.Auth.dll" />
+    <None Include="Assets\Game Assets\TextMesh Pro\Shaders\shader 1.shader" />
+    <None Include="Assets\Game Assets\Font\Font Creator\NewSurfaceShader.shader" />
     <None Include="Assets\Game Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Game Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Game Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -360,17 +384,17 @@
     <Reference Include="Firebase.Firestore">
       <HintPath>Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.Analytics">
       <HintPath>Assets\Firebase\Plugins\Firebase.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
@@ -754,6 +778,10 @@
       <Project>{45F8B944-7C6B-1B5B-89A7-52BEAD7D6C36}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Player.csproj">
+      <Project>{FDF28B7A-A694-56D8-E926-78EE37912398}</Project>
+      <Name>UnityEngine.Advertisements.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Player.csproj">
       <Project>{3B166783-B51F-5A8F-C8F7-357E4B1C6130}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
@@ -762,6 +790,10 @@
       <Project>{615F35DA-8BE9-A805-B69A-78BA061A3ECD}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
+      <Project>{C073A7FC-6D4A-A4B6-D04B-9CA2B4631A07}</Project>
+      <Name>Unity.VisualScripting.Core.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Google.Play.Games.Player.csproj">
       <Project>{1263AA45-6CD5-4663-9A20-07A7A37FA425}</Project>
       <Name>Google.Play.Games.Player</Name>
@@ -769,10 +801,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{FE56A47C-5B74-DA19-E72E-0BF6B9F03CD0}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
-      <Project>{C073A7FC-6D4A-A4B6-D04B-9CA2B4631A07}</Project>
-      <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

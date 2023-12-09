@@ -15,8 +15,21 @@ public class ResourceStorage : MonoBehaviour
         instance = this;
     }
 
-    public void MinusMakanan(ResepMakanan resep)
+    public void TambahLimitMaksimal(float limit)
     {
-        
+        storage.TambahLimitMakanan(limit);
+    }
+
+    public void TambahJumlah(int index, float jumlah)
+    {
+        storage.penyimpananBahan[index].jumlah += jumlah;
+    }
+
+    public void UnlockStand2(float jumlah)
+    {
+        for (int i = 11; i <= 19; i++)
+        {
+            storage.penyimpananBahan[i].jumlah += jumlah;
+        }
     }
 }

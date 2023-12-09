@@ -14,6 +14,7 @@ public class CameraSwifeMovement : MonoBehaviour
     public Vector3 stand1;
     public Vector3 stand2;
     public Vector3 stand3;
+    public float moveSpeed = 5f;
 
     [SerializeField]
     public bool isDragging = false;
@@ -26,6 +27,7 @@ public class CameraSwifeMovement : MonoBehaviour
     private void Start()
     {
         SpawnPeople.instance.ChangeActiveStand(1);
+        SpawnPeople.instance.SetCustomerPrefabActive(0);
     }
 
     private void Update()
@@ -37,12 +39,12 @@ public class CameraSwifeMovement : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
+                standActive = GameManager.instance.GetStandActive();
 
                 if (touch.phase == TouchPhase.Began)
                 {
                     isDragging = true;
-
-
+                   
                 }
                 else if (touch.phase == TouchPhase.Moved)
                 {
@@ -71,12 +73,14 @@ public class CameraSwifeMovement : MonoBehaviour
                                 targetPosition = stand2;
                                 GameManager.instance.UpdateStandActive(2);
                                 SpawnPeople.instance.ChangeActiveStand(2);
+                                SpawnPeople.instance.SetCustomerPrefabActive(1);
                             }
                             else if (swipeDistance > 300)
                             {
                                 targetPosition = stand3;
                                 GameManager.instance.UpdateStandActive(3);
                                 SpawnPeople.instance.ChangeActiveStand(3);
+                                SpawnPeople.instance.SetCustomerPrefabActive(2);
                             }
                             initialPosition = targetPosition;
 
@@ -92,6 +96,7 @@ public class CameraSwifeMovement : MonoBehaviour
                                 targetPosition = stand1;
                                 GameManager.instance.UpdateStandActive(1);
                                 SpawnPeople.instance.ChangeActiveStand(1);
+                                SpawnPeople.instance.SetCustomerPrefabActive(0);
                             }
 
                             initialPosition = targetPosition;
@@ -103,6 +108,7 @@ public class CameraSwifeMovement : MonoBehaviour
                                 targetPosition = stand1;
                                 GameManager.instance.UpdateStandActive(1);
                                 SpawnPeople.instance.ChangeActiveStand(1);
+                                SpawnPeople.instance.SetCustomerPrefabActive(0);
                             }
                             else if (swipeDistance > 300)
                             {
@@ -125,5 +131,58 @@ public class CameraSwifeMovement : MonoBehaviour
         {
             mainCamera.transform.position = targetPosition;
         }
+    }
+
+    public void MoveCameraToStand(int standNomor)
+    {
+        StartCoroutine(MoveToStandLocation(standNomor));
+        GameManager.instance.popupActive = true;
+    }
+
+
+    IEnumerator MoveToStandLocation(int standNomor)
+    {
+        if(standNomor == 2)
+        {
+            
+            while (Vector3.Distance(transform.position, stand2) > 0.1f)
+            {
+                
+                // Menggunakan Lerp untuk pergerakan yang halus
+                transform.position = Vector3.Lerp(mainCamera.transform.position, stand2, Time.deltaTime * 5);
+
+                yield return null;
+                Debug.Log("Pergerakan Masih Berlangsung!");
+            }
+
+            // Pergerakan selesai ketika mencapai titik target
+            Debug.Log("Pergerakan selesai!");
+            GameManager.instance.UpdateStandActive(2);
+            SpawnPeople.instance.ChangeActiveStand(2);
+            GameManager.instance.popupActive = false;
+            targetPosition = stand2;
+            initialPosition = targetPosition;
+        }
+        
+        
+        if(standNomor == 3)
+        {
+            while (Vector3.Distance(transform.position, stand3) > 0.1f)
+            {
+               
+                // Menggunakan Lerp untuk pergerakan yang halus
+                mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, stand3, Time.deltaTime * 5);
+
+                yield return null;
+            }
+
+            Debug.Log("Pergerakan selesai!");
+            GameManager.instance.UpdateStandActive(3);
+            SpawnPeople.instance.ChangeActiveStand(3);
+            GameManager.instance.popupActive = false;
+            targetPosition = stand3;
+            initialPosition = targetPosition;
+        }
+        
     }
 }

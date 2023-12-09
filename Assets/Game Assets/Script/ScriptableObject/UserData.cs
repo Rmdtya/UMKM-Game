@@ -21,7 +21,6 @@ public class UserData : ScriptableObject
     public int multipilerSpawn;
 
     public float multipilerAutoCreateBonus;
-
     public float multipilerPopularityBonus;
 
     public bool manualCreateBonus;
@@ -52,7 +51,7 @@ public class UserData : ScriptableObject
 
     public void SetDiamond(int diamondValue)
     {
-        diamond += diamond;
+        diamond += diamondValue;
     }
 
     public double GetPopularity()
@@ -78,5 +77,49 @@ public class UserData : ScriptableObject
     public bool GetUnlockedStand3()
     {
         return standUnlocked3;
+    }
+
+    public void SetLoadData(double loadCoin, int loadDiamond, double loadPopularity)
+    {
+        coin = loadCoin;
+        diamond = loadDiamond;
+        popularity = loadPopularity;
+    }
+
+    public void SetLoadStandUnlock(bool stand1, bool stand2, bool stand3)
+    {
+        standUnlocked1 = stand1;
+        standUnlocked2 = stand2;
+        standUnlocked3 = stand3;
+    }
+
+    public void ResetStatus()
+    {
+        coin = 0;
+        popularity = 0;
+        multipilerCoinBonus = 1;
+        plusCoinBonus = 0;
+        multipilerSpeedSpawnBonus = 1;
+        multipilerSpawn = 1;
+
+        standUnlocked1 = true;
+        standUnlocked2 = false;
+        standUnlocked3 = false;
+}
+
+    public void SetLoadStatusData(float loadmultipilerCoinBonus, float loadplusCoinBonus, float loadmultipilerSpeedSpawnBonus, int loadmultipilerSpawn, float loadmultipilerAutoCreateBonus, float loadmultipilerPopularityBonus, 
+        bool loadmanualCreateBonus, bool loaddouleAutoCreateBonus, bool loadcreateWithOutResource)
+    {
+        multipilerCoinBonus = loadmultipilerCoinBonus;
+        plusCoinBonus = loadplusCoinBonus;
+        multipilerSpeedSpawnBonus = loadmultipilerSpeedSpawnBonus;
+        multipilerSpawn = loadmultipilerSpawn;
+
+        multipilerAutoCreateBonus = loadmultipilerAutoCreateBonus;
+        multipilerPopularityBonus = loadmultipilerPopularityBonus;
+
+        manualCreateBonus = loadmanualCreateBonus;
+        douleAutoCreateBonus = loaddouleAutoCreateBonus;
+        createWithOutResource = loadcreateWithOutResource;
     }
 }

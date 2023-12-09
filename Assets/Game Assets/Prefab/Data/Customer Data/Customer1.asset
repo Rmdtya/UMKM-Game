@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8665c96c0d04b5c449f09ddd39752810, type: 3}
   m_Name: Customer1
   m_EditorClassIdentifier: 
+  namaPelanggan: Anak Perempuan
   lvCustomer: 1
   speedCustomer: 5
   jenisBeli: 0
   jumlahBeli: 1
-  unlockedStand1: 1
-  unlockedStand2: 0
-  unlockedStand3: 0
+  unlockedStand: 010101
   skill: 0
+  syaratPopularity: 0
+  syaratLevel: 0
+  deskripsiUnlock: Sudah Terunlock
