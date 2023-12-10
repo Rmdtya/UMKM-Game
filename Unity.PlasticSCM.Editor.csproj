@@ -188,8 +188,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\UI\DrawUserIcon.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Configuration\CredentialsDialog.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\UI\ScreenResolution.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\AssetOverlays\Cache\BuildPathDictionary.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Inspector\InspectorAssetSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\AssetOverlays\Cache\BuildPathDictionary.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoriesListView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Tool\ToolConstants.cs" />
@@ -1035,13 +1035,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6F0142A3-74AC-9496-CEE4-B344040EE673}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{73AA6B9C-D6B8-FD12-55A6-75945A1DCB13}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{6F0142A3-74AC-9496-CEE4-B344040EE673}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{7FCFE633-D412-1620-7843-BFD2C5126D4B}</Project>
