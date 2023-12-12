@@ -234,10 +234,10 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Serialization\DictionaryAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Collections\INotifyCollectionChanged.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Dependencies\AssemblyQualifiedNameParser\ParsedAssemblyQualifiedName.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\StaticActionInvoker_4.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Dependencies\FullSerializer\Reflection\fsMetaProperty.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\StaticActionInvoker_2.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Utilities\IIdentifiable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\StaticActionInvoker_4.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\StaticPropertyAccessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\EditorBinding\DisableAnnotationAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Dependencies\FullSerializer\Reflection\fsMetaType.cs" />
@@ -425,8 +425,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\StaticInvokerBase.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Ensure\EnsureThat.ValueTypes.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\UIInterfaces\UnityOnSubmitMessageListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Profiling\ProfiledSegment.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Dependencies\FullSerializer\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Profiling\ProfiledSegment.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Input\PressState.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Cloning\Cloners\ListCloner.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Variables\VariableKind.cs" />
@@ -478,8 +478,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Graphs\IGraphItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Operators\MultiplicationHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\UI\UnityOnToggleValueChangedMessageListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\MonoBehaviour\UnityOnMouseEnterMessageListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Utilities\IGettable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\MonoBehaviour\UnityOnMouseEnterMessageListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Reflection\Optimization\InstancePropertyAccessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\MonoBehaviour\UnityOnTriggerExit2DMListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Core\Listeners\UI\UnityOnSliderValueChangedMessageListener.cs" />
@@ -680,6 +680,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Games\unity\2021.3.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Firestore">
       <HintPath>Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
     </Reference>
@@ -694,12 +697,6 @@
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>

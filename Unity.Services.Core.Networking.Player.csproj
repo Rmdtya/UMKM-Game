@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.8.2\Runtime\Networking\UnityWebRequestClient.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.8.2\Runtime\Networking\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.8.2\Runtime\Networking\HttpServiceConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.7.0\Runtime\Networking\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.7.0\Runtime\Networking\HttpServiceConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.7.0\Runtime\Networking\UnityWebRequestClient.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.services.core@1.8.2\Runtime\Networking\Unity.Services.Core.Networking.asmdef" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.7.0\Runtime\Networking\Unity.Services.Core.Networking.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -256,6 +256,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Games\unity\2021.3.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Firestore">
       <HintPath>Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
     </Reference>
@@ -271,17 +274,14 @@
     <Reference Include="Google.MiniJson">
       <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Auth">
       <HintPath>Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Games\unity\2021.3.18f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>

@@ -378,6 +378,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Games\unity\2021.3.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Firestore">
       <HintPath>Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
     </Reference>
@@ -392,12 +395,6 @@
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
@@ -773,14 +770,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Purchasing.Common.Player.csproj">
-      <Project>{2B6BD7C5-C9B2-4FE7-B4D6-ACB5B6C38B9F}</Project>
-      <Name>Purchasing.Common.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Player.csproj">
-      <Project>{6959D042-5FF8-4077-7401-FF901098D863}</Project>
-      <Name>UnityEngine.Purchasing.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
       <Project>{4096C8BE-649C-A6E6-D9B2-2B219478EAA4}</Project>
       <Name>Unity.Timeline.Player</Name>
@@ -801,37 +790,9 @@
       <Project>{615F35DA-8BE9-A805-B69A-78BA061A3ECD}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Security.Player.csproj">
-      <Project>{74040ED2-0C97-BB21-C05C-1E4C7E381F1A}</Project>
-      <Name>UnityEngine.Purchasing.Security.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{C073A7FC-6D4A-A4B6-D04B-9CA2B4631A07}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{91870D99-6348-5F63-6FD9-3F1E971DBB4D}</Project>
-      <Name>Unity.Services.Core.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
-      <Project>{AACB78E9-4544-0077-9DF5-25737C223B6E}</Project>
-      <Name>Unity.Services.Core.Analytics.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.Player.csproj">
-      <Project>{433AC7DD-DA10-8384-7C72-178F1B74D36C}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.Player.csproj">
-      <Project>{D094018C-6976-6A3D-4AB6-23F8C401AEFC}</Project>
-      <Name>UnityEngine.Purchasing.Codeless.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
-      <Project>{563BA99F-F74B-DE01-277E-DE2CF2C659F3}</Project>
-      <Name>Unity.Services.Core.Environments.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.Player.csproj">
-      <Project>{61C10A48-4E7D-548B-BB50-46DA433E80BE}</Project>
-      <Name>UnityEngine.Purchasing.Stores.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Google.Play.Games.Player.csproj">
       <Project>{1263AA45-6CD5-4663-9A20-07A7A37FA425}</Project>
